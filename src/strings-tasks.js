@@ -511,6 +511,7 @@ function encodeToRot13(str) {
  *   'K♠' => 51
  */
 function getCardId(value) {
+  throw new Error('Not implemented');
   const arr = [
     'A♣',
     '2♣',
