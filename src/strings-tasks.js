@@ -380,19 +380,20 @@ function reverseWords(str) {
  *   invertCase('JavaScript is Fun') => 'jAVAsCRIPT IS fUN'
  *   invertCase('12345') => '12345'
  */
-function invertCase(str) {
-  return str
-    .split('')
-    .map((elem) => {
-      if (elem === elem.toUpperCase() && elem !== elem.toLowerCase()) {
-        return elem.toLowerCase();
-      }
-      if (elem === elem.toLowerCase() && elem !== elem.toUpperCase()) {
-        return elem.toUpperCase();
-      }
-      return elem;
-    })
-    .join('');
+function invertCase(/* str */) {
+  throw new Error('Not implemented');
+  // return str
+  //   .split('')
+  //   .map((elem) => {
+  //     if (elem === elem.toUpperCase() && elem !== elem.toLowerCase()) {
+  //       return elem.toLowerCase();
+  //     }
+  //     if (elem === elem.toLowerCase() && elem !== elem.toUpperCase()) {
+  //       return elem.toUpperCase();
+  //     }
+  //     return elem;
+  //   })
+  //   .join('');
 }
 
 /**
